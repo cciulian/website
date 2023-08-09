@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Rrezervari</title>
+        <link rel="stylesheet" href="css/rezervari.css">
+        <meta name="viweport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+         <div id=logo>
+            <a href="https://www.google.com/maps/dir/Pensiunea+Colev,+Strada+Avram+Iancu,+Strem%C8%9B+517014/''/@46.2212203,23.6494993" target="_blank"><h1>PENSIUNEA COLEV</h1>
+            </a>
+        </div>
+        <div id ="menu">
+                <a href="index.html">ACASA</a>
+                <a href="atractii turistice.html">ATRACTII TURISTICE<a/>
+        </div>
+        <div id="content">
+            <form id="registration" action="procesare.php" method="get" autocomplete="off">
+				<label>Nume complet:</label><br>
+				<input type="text" name="nume" required>
+					<br><br>
+				<label>Email:</label><br>
+				<input type="email" name="email" placeholder="one@test.com" required>
+					<br><br>
+				<label>Telefon:</label><br>
+				<input type="tel" name="telefon" placeholder="0723456789" required>
+					<br><br>
+				<label>Act identitate:</label><br>
+				<input type="text" name="ai" placeholder="AX 123456"><br>
+					<br><br>
+				<label>Tip camera:</label><br>
+				<select name="camera">
+					<option value="singel" selected>Singel Bed</option>
+					<option value="double">Double room</option>
+					<option value="apatment">Apatment double bed + sofa</option>
+				</select>
+					<br><br>
+				<label>Adulti</label>
+				<input type="number" name="total_adults" placeholder="2" min="1" required>
+
+				<label>Copii</label>
+				<input type="number" name="total_children" placeholder="1" min="0" required>
+					<br><br>
+				<label name="checkin-date">Check-in Date</label>
+				<input type="date" name="checkin" required>
+
+				<label name="checkout-date">Check-out Date</label>
+				<input type="date" name="checkout" required>
+					<br><br>
+				<label>Mesaj:</label><br>
+				<textarea name="mesaj"></textarea>
+					<br><br>
+				<button type="submit">Trimite rezervarea</button>
+            </form>
+        </div>
+    </body>
+</html>
